@@ -55,6 +55,8 @@
  */
 int main(void)
 {
+    /* Define the init structure for the output LED pin*/
+    gpio_pin_config_t led_config = {kGPIO_DigitalOutput, 0, kGPIO_NoIntmode};
     char ch;
 
     /* Init board hardware. */
@@ -63,11 +65,23 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
+    GPIO_PinInit(BOARD_USER_LED_GPIO, BOARD_USER_LED_GPIO_PIN, &led_config);
+    SysTick_Config(SystemCoreClock / 1000);
+
     PRINTF("hello world.\r\n");
 
     while (1)
     {
         ch = GETCHAR();
         PUTCHAR(ch);
+    }
+}
+
+void SysTick_Handler(void)
+{
+    static uint32_t tick = 0;
+
+    if (++tick % 500 == 0) {
+        USER_LED_TOGGLE();
     }
 }

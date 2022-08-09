@@ -7,7 +7,8 @@
     <booleanAttribute key="com.crt.ctrlcenter.crtInit" value="true"/>
     <stringAttribute key="com.crt.ctrlcenter.currentWireType" value="SWD"/>
     <booleanAttribute key="com.crt.ctrlcenter.mainBreakIsHardware" value="true"/>
-    <stringAttribute key="com.crt.ctrlcenter.serialNumber" value="LinkServerARMCMSIS-DAP0227000032624e45003000197ece004a7e61000097969900"/>
+    <booleanAttribute key="com.crt.ctrlcenter.saveState" value="true"/>
+    <stringAttribute key="com.crt.ctrlcenter.serialNumber" value="LinkServerVemagicJLinkOB CMSIS-DAP8D9538945256"/>
     <mapAttribute key="com.crt.ctrlcenter.symbolsGroupSettings"/>
     <intAttribute key="com.crt.ctrlcenter.version" value="6"/>
     <stringAttribute key="com.nxp.mcuxpresso.flash.base.address" value="0x60000000"/>
@@ -17,8 +18,8 @@
     <stringAttribute key="com.nxp.mcuxpresso.flash.executable" value="axf"/>
     <stringAttribute key="com.nxp.mcuxpresso.flash.program.action" value="Program"/>
     <booleanAttribute key="com.nxp.mcuxpresso.flash.reset.target" value="true"/>
-    <stringAttribute key="com.nxp.mcuxpresso.ide.probe.manufacturer" value="ARM"/>
-    <stringAttribute key="com.nxp.mcuxpresso.ide.probe.name" value="CMSIS-DAP"/>
+    <stringAttribute key="com.nxp.mcuxpresso.ide.probe.manufacturer" value="Vemagic"/>
+    <stringAttribute key="com.nxp.mcuxpresso.ide.probe.name" value="JLinkOB CMSIS-DAP"/>
     <stringAttribute key="com.nxp.mcuxpresso.ide.probe.type" value="LinkServer"/>
     <stringAttribute key="debug.level" value="2"/>
     <stringAttribute key="emu.speed" value=""/>
